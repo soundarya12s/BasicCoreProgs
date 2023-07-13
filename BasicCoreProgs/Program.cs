@@ -19,7 +19,7 @@ namespace MiniProjects
             swapnum SN = new swapnum();
             evenOrOdd e = new evenOrOdd();
             VowelOrConsonant vc = new VowelOrConsonant();
-
+            LargestNum l = new LargestNum();
 
 
             switch (choice)
@@ -79,6 +79,14 @@ namespace MiniProjects
                     Console.WriteLine("Enter an alphabet:");
                     char ch = Convert.ToChar(Console.ReadLine());
                     vc.isVowel(ch);
+                    break;
+
+                case 10:
+                    Console.WriteLine("Enter the three numbers:");
+                    int i = Convert.ToInt32(Console.ReadLine());
+                    int j = Convert.ToInt32(Console.ReadLine());
+                    int k = Convert.ToInt32(Console.ReadLine());
+                    l.LargestN(i, j, k);
                     break;
 
             }
