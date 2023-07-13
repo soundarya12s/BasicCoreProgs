@@ -14,6 +14,7 @@ namespace MiniProjects
             PowerOf2 p = new PowerOf2();
             HarmonicNumber h = new HarmonicNumber();
             Factors factors = new Factors();
+            QuoAndRem q = new QuoAndRem();
 
             switch (choice)
             {
@@ -45,6 +46,14 @@ namespace MiniProjects
                     Console.WriteLine("Enter the number:");
                     int N = Convert.ToInt32(Console.ReadLine());
                     factors.factors(N);
+                    break;
+
+                case 6:
+                    Console.WriteLine("Enter the number:");
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Enter the divisor:");
+                    int div = Convert.ToInt32(Console.ReadLine());
+                    q.QuoRem(num, div);
                     break;
 
             }
