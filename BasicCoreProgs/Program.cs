@@ -10,6 +10,7 @@ namespace MiniProjects
             int choice = Convert.ToInt32(Console.ReadLine());
 
             Coin coin = new Coin();
+            LeapYear leapYear = new LeapYear();
 
             switch (choice)
             {
@@ -18,7 +19,14 @@ namespace MiniProjects
                     int n = Convert.ToInt32(Console.ReadLine());
                     coin.flip(n);
                     break;
+
+                case 2:
+                    Console.WriteLine("Enter the year:");
+                    int y = Convert.ToInt32(Console.ReadLine());
+                    leapYear.Leap_Year(y);
+                    break;
+
             }
-            }
+        }
     }
 }
