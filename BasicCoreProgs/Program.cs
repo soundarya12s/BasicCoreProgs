@@ -12,6 +12,7 @@ namespace MiniProjects
             Coin coin = new Coin();
             LeapYear leapYear = new LeapYear();
             PowerOf2 p = new PowerOf2();
+            HarmonicNumber h = new HarmonicNumber();
 
             switch (choice)
             {
@@ -31,6 +32,12 @@ namespace MiniProjects
                     Console.WriteLine("Enter the number: ");
                     int po = Convert.ToInt32(Console.ReadLine());
                     p.powerOf(po);
+                    break;
+
+                case 4:
+                    Console.WriteLine("Enter the number:");
+                    int hN = Convert.ToInt32(Console.ReadLine());
+                    h.harNo(hN);
                     break;
 
             }
