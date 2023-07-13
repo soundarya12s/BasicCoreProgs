@@ -18,6 +18,7 @@ namespace MiniProjects
             QuoAndRem q = new QuoAndRem();
             swapnum SN = new swapnum();
             evenOrOdd e = new evenOrOdd();
+            VowelOrConsonant vc = new VowelOrConsonant();
 
 
 
@@ -72,6 +73,12 @@ namespace MiniProjects
                     Console.WriteLine("Enter the number:");
                     int nu = Convert.ToInt32(Console.ReadLine());
                     e.evenorOdd(nu);
+                    break;
+
+                case 9:
+                    Console.WriteLine("Enter an alphabet:");
+                    char ch = Convert.ToChar(Console.ReadLine());
+                    vc.isVowel(ch);
                     break;
 
             }
