@@ -17,6 +17,9 @@ namespace MiniProjects
             Factors factors = new Factors();
             QuoAndRem q = new QuoAndRem();
             swapnum SN = new swapnum();
+            evenOrOdd e = new evenOrOdd();
+
+
 
             switch (choice)
             {
@@ -63,6 +66,12 @@ namespace MiniProjects
                     int a = Convert.ToInt32(Console.ReadLine());
                     int b = Convert.ToInt32(Console.ReadLine());
                     SN.swapnumbers(a, b);
+                    break;
+
+                case 8:
+                    Console.WriteLine("Enter the number:");
+                    int nu = Convert.ToInt32(Console.ReadLine());
+                    e.evenorOdd(nu);
                     break;
 
             }
