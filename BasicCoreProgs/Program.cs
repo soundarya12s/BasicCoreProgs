@@ -11,6 +11,7 @@ namespace MiniProjects
 
             Coin coin = new Coin();
             LeapYear leapYear = new LeapYear();
+            PowerOf2 p = new PowerOf2();
 
             switch (choice)
             {
@@ -24,6 +25,12 @@ namespace MiniProjects
                     Console.WriteLine("Enter the year:");
                     int y = Convert.ToInt32(Console.ReadLine());
                     leapYear.Leap_Year(y);
+                    break;
+
+                case 3:
+                    Console.WriteLine("Enter the number: ");
+                    int po = Convert.ToInt32(Console.ReadLine());
+                    p.powerOf(po);
                     break;
 
             }
