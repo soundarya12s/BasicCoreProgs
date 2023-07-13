@@ -13,6 +13,7 @@ namespace MiniProjects
             LeapYear leapYear = new LeapYear();
             PowerOf2 p = new PowerOf2();
             HarmonicNumber h = new HarmonicNumber();
+            Factors factors = new Factors();
 
             switch (choice)
             {
@@ -38,6 +39,12 @@ namespace MiniProjects
                     Console.WriteLine("Enter the number:");
                     int hN = Convert.ToInt32(Console.ReadLine());
                     h.harNo(hN);
+                    break;
+
+                case 5:
+                    Console.WriteLine("Enter the number:");
+                    int N = Convert.ToInt32(Console.ReadLine());
+                    factors.factors(N);
                     break;
 
             }
