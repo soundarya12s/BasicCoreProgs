@@ -1,4 +1,5 @@
-﻿using System;
+﻿using demogit;
+using System;
 
 namespace MiniProjects
 {
@@ -15,6 +16,7 @@ namespace MiniProjects
             HarmonicNumber h = new HarmonicNumber();
             Factors factors = new Factors();
             QuoAndRem q = new QuoAndRem();
+            swapnum SN = new swapnum();
 
             switch (choice)
             {
@@ -54,6 +56,13 @@ namespace MiniProjects
                     Console.WriteLine("Enter the divisor:");
                     int div = Convert.ToInt32(Console.ReadLine());
                     q.QuoRem(num, div);
+                    break;
+
+                case 7:
+                    Console.WriteLine("Enter numbers:");
+                    int a = Convert.ToInt32(Console.ReadLine());
+                    int b = Convert.ToInt32(Console.ReadLine());
+                    SN.swapnumbers(a, b);
                     break;
 
             }
